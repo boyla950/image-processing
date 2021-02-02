@@ -1,0 +1,107 @@
+
+############ NOTE: WHEN RUNNING IN PYTHON SHELL, CLOSE IMSHOW WINDOWS USING X IN TOP CORNER AND THEN CONTROL^C TO QUIT ###########
+
+
+Problem 1 - Light Leak:
+	
+$ python3
+
+>>>	import cv2
+>>>	import filters
+
+>>>	img = cv2.imread(‘input1.png’, cv2.IMREAD_COLOR) 
+
+>>>	filters.problem1(img, 0.6, 0.4, ‘white’)
+	
+	#### problem1(image, darkening coefficient, blending coefficient, light type)
+	#### darkening coefficient: 0 - 1 (recommended 0.6)
+	#### blending coefficient: 0 - 1 (recommended 0.4)
+	#### light type: 'white' or 'rainbow'
+
+
+
+
+Problem 1 - Rainbow Light Leak:
+
+$ python3
+
+>>>	import cv2
+>>>	import filters
+
+>>>	img = cv2.imread(‘input1.png’, cv2.IMREAD_COLOR)	
+
+>>>	filters.problem1(img, 0.6, 0.4, ‘rainbow’)
+	
+	#### problem1(image, darkening coefficient, blending coefficient, light type)
+	#### darkening coefficient: 0 - 1 (recommended 0.6)
+	#### blending coefficient: 0 - 1 (recommended 0.4)
+	#### light type: 'white' or 'rainbow'
+
+
+
+
+Problem 2 - Grey Pencil Sketch:
+
+$ python3
+
+>>>	import cv2
+>>>	import filters
+
+>>>	img = cv2.imread(‘input1.png’, cv2.IMREAD_COLOR)
+
+>>>	filters.problem1(img, 0.5, ‘grey’)
+
+	#### problem2(image, blending coefficient, pencil type)
+	#### blending coefficient: 0 - 1 (recommended 0.5)
+	#### pencil type: 'grey' or 'colour'
+
+
+
+
+Problem 2 - Colour Pencil Sketch:
+
+$python3
+
+>>>	import cv2
+>>>	import filters
+
+>>>	img = cv2.imread(‘input1.png’, cv2.IMREAD_COLOR)
+
+>>>	filters.problem2(img, 0.5, ‘colour’)
+	
+	#### problem2(image, blending coefficient, pencil type)
+	#### blending coefficient: 0 - 1 (recommended 0.5)
+	#### pencil type: 'grey' or 'colour'
+
+
+
+
+Problem 3 - Beautification:
+
+$python3
+
+>>>	import cv2
+>>>	import filters
+
+>>>	img = cv2.imread(‘input1.png’, cv2.IMREAD_COLOR)
+
+>>>	filters.problem3(img, 3)
+
+	#### problem3(image, blending coefficient)
+	#### blur region: any positive odd integer (recommended 3 or 5)
+
+
+Problem 4 - Swirl:
+
+$python3
+
+>>>	import cv2
+>>>	import filters
+
+>>>	img = cv2.imread(‘input1.png’, cv2.IMREAD_COLOR)
+
+>>>	filters.problem4(img, 0.8, 2)
+
+	#### problem4(image, swirl radius, swirl intensity)
+	#### swirl radius: 0 - 1 (recommended 0.8)
+	#### swirl intensity: any number (recommend 3)
