@@ -576,3 +576,8 @@ def problem4(img, swirl_radius, swirl_intensity):
     cv2.waitKey(0)
     cv2.destroyAllWindows()
 
+
+
+img = cv2.imread('input1.jpg',cv2.IMREAD_COLOR)
+
+problem4(img, 0.75, 3)

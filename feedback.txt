@@ -1,0 +1,17 @@
+Final mark: 87/100
+
+Question 1
+Mark: 20/25 
+Comment: Excellent approach for the light leaks, especially the rainbow one that seems very close to being realistic. The monochromatic on the other hand, looks a bit less realistic.
+
+Question 2
+Mark: 22/25 
+Comment: Outstanding approach using Canny edge detection, very close to being realistic. More could have been achieved with a more appropriate combination of input image pre-filtering.
+
+Question 3
+Mark: 20/25 
+Comment: Excellent filtering and colour grading using L*a*b. Could have been more correct/creative with the smoothing part, using e.g., bilateral filtering for better skin smoothing.
+
+Question 4
+Mark: 25/25 
+Comment: Perfect work and analysis.
